@@ -1655,6 +1655,7 @@ body {
 			content styles
 \* ----------------------------------- */
 .main-top-box {
+  background-color: #000;
   position: relative;
   overflow: hidden;
   line-height: 1;
@@ -2343,6 +2344,9 @@ body {
     width: 50%;
     height: 40px;
   }
+  .form-box .frm-row .frm-field:first-child {
+    width: 100%;
+  }
   .form-box .frm-row .field-info {
     text-align: left;
     width: auto;
@@ -2709,7 +2713,7 @@ body {
     margin-right: -4px;
   }
   .services-box {
-    margin-bottom: 20px;
+    margin-bottom: 5rem;
   }
   .services-box .item-wrap {
     margin-bottom: 0;

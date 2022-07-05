@@ -36,6 +36,8 @@ $(document).ready(function(){
             }
         })
     });
+
+
     
 
 
@@ -211,4 +213,16 @@ $(document).ready(function(){
             nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-next"></span>',
         });
     }
+});
+$(window).on('load', function () {
+
+    //animate anchor scroll
+    $('.js-anchor-button').on("click", function (e) {
+        let anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 20
+        }, 1000);
+        e.preventDefault();
+        return false;
+    });
 });
