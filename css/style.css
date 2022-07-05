@@ -1726,6 +1726,17 @@ body {
 .steps-box.active .item-tile-step {
   opacity: 1;
 }
+.steps-box .car {
+  width: 17%;
+  position: absolute;
+  bottom: 26%;
+  left: 50%;
+  z-index: 5;
+}
+.steps-box .car img {
+  display: block;
+  width: 100%;
+}
 .steps-box .step01,
 .steps-box .step02,
 .steps-box .step03 {
@@ -1752,6 +1763,7 @@ body {
   top: 14.5%;
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
+  z-index: 4;
 }
 .steps-box .step03 {
   width: 39.9%;
