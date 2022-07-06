@@ -76,6 +76,13 @@ $(document).ready(function(){
         })
     });
     
+    
+    //popup close
+    $('.js-popup-close').on('click', function(){
+        $('.fancybox-button.fancybox-close-small').click();
+        return false;
+    })
+    
 	
     //popup block
 	$('.js-popup-wrap .js-btn-toggle').on('click', function() {

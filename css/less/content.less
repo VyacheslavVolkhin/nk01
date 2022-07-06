@@ -1,6 +1,62 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.popup-box {
+    display: none;
+    .popup-title-wrap {
+        margin-bottom: 15px;
+    }
+    .popup-title {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &.fancybox-content {
+        width: 430px;
+        background-color: #fff;
+        padding: 20px 30px;
+    }
+    .fancybox-button.fancybox-close-small {
+        display: none;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        &:hover {
+            background: none;
+            &:after, &:before {
+                background: #000;
+            }
+        }
+        &:after, &:before {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 2px;
+            background: #8B949E;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -1px 0 0 -9px;
+            .t-rotate(45deg);
+            border-radius: 1px;
+            transition: background ease 0.2s;
+        }
+        &:before {
+            .t-rotate(-45deg);
+        }
+        * {
+            display: none;
+        }
+    }
+}
+.fancybox-bg {
+    background: fade(#000, 70);
+}
 .main-top-box {
     background-color: #000;
     position: relative;

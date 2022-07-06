@@ -82,6 +82,14 @@ select::-ms-expand {
             border-color: transparent;
         }
     }
+    &.button-second {
+        background-color: var(--clr-light);
+        border-color: var(--clr-light);
+        &:hover {
+            background-color: #BFBFBF - #111;
+            border-color: #BFBFBF - #111;
+        }
+    }
 }
 .btn-action-ico {
 	min-width: 0;
@@ -222,6 +230,31 @@ select::-ms-expand {
         .button-ico {
             width: 28px;
             height: 28px;
+        }
+    }
+}
+.frm-popup {
+    .frm-field {
+        margin-bottom: 5px;
+        padding: 0 8px;
+        width: 100%;
+    }
+    .frm-select {
+        margin-top: 10px;
+    }
+    .frm-row-submit, .frm-row {
+        margin: 0 -8px;
+    }
+    .frm-row-submit {
+        padding-top: 10px;
+        .frm-field {
+            margin-bottom: 0;
+            width: auto;
+            flex-shrink: 0;
+        }
+        .btn {
+            min-width: 130px;
+            height: 35px;
         }
     }
 }
